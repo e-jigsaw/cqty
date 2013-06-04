@@ -4,9 +4,7 @@ cqty
 その日のコミット量を出力します。
 
 ```
-$ git clone https://github.com/e-jigsaw/cqty.git
-$ cd cqty
-$ npm install
-$ grunt coffee
-$ node cqty.js
+$ npm install -g https://github.com/e-jigsaw/cqty/tarball/master
 ```
+
+node.js が必要なので node.js をインストールしておいてください。
