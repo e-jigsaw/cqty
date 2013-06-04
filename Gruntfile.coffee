@@ -2,14 +2,16 @@ module.exports = (grunt)->
 	grunt.initConfig
 		pkg: "<json:package.json>"
 		coffee:
-			cqty:
+			lib:
 				files:
-					"cqty.js": "cqty.coffee"
+					"lib/index.js": "lib/index.coffee"
+					"lib/argv.js": "lib/argv.coffee"
+					"lib/display.js": "lib/display.coffee"
 				options:
 					bare: true
 					sourceMap: true
 		watch:
-			files: ["*.coffee"]
+			files: ["*.coffee", "./**/*.coffee"]
 			tasks: ["coffee"]
 
 	grunt.loadNpmTasks "grunt-contrib-coffee"

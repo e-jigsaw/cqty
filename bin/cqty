@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+/*!
+ * Module dependencies.
+ */
+
+ var cli = require("../lib");
+
+ /*!
+  * Run the command-line client
+  */
+
+  cli.argv(process.argv); 
