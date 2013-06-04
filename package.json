@@ -1,0 +1,12 @@
+{
+	"name": "cqty",
+	"description": "check commit quantity",
+	"author": "jigsaw <m@jgs.me>",
+	"version": "0.0.1",
+	"dependencies": {
+		"coffee-script": "1.6.2",
+		"grunt": "0.4.1",
+		"grunt-contrib-coffee": "0.6.6",
+		"grunt-contrib-watch": "0.3.1"
+	}
+}
