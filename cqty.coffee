@@ -9,7 +9,6 @@ exec "git log --numstat --after=#{dateFormat} --pretty=format:''", (err, stdout,
 	plus = minus = 0
 	for file in list
 		match = file.match(/^(\d+)\t(\d+)/)
-		console.log match
 		if match isnt null
 			plus += parseInt match[1]
 			minus += parseInt match[2]
