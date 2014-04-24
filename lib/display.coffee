@@ -2,7 +2,7 @@
 
 module.exports = ->
 	today = new Date()
-	yesterday = new Date today.getFullYear(), today.getMonth(), today.getDate()-1
+	yesterday = new Date today.getFullYear(), today.getMonth(), today.getDate()
 
 	exec "git log --numstat --all --after=\"#{yesterday}\" --pretty=format:''", (err, stdout, stderr)->
 		list = stdout.split("\n")
